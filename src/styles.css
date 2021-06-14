@@ -25,6 +25,7 @@ small {
 }
 .card {
   max-width: 600px;
+  display: block;
   margin: 20px auto;
   border-radius: 10px;
   background: linear-gradient(#f2b9ae, #eeb9e8);
