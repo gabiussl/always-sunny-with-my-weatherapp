@@ -1,0 +1,60 @@
+.temperature {
+  text-align: center;
+}
+.weekday {
+  text-align: center;
+}
+h1 {
+  padding: 20px;
+  font-size: 15px;
+}
+h2 {
+  margin: -26px 20px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+h3 {
+  margin-top: 60px;
+  font-size: 100px;
+}
+small {
+  font-size: 20px;
+}
+.icons {
+  font-size: 40px;
+}
+.card {
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: linear-gradient(#f2b9ae, #eeb9e8);
+}
+.search-window {
+  width: 45%;
+  position: relative;
+  top: -40px;
+  left: 250px;
+}
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f2b9ae;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 50px;
+  background: linear-gradient(#f2b9ae, #eeb9e8);
+}
+button {
+  display: block;
+  margin-left: 320px;
+  margin-top: -20px;
+  background-color: #1a253f;
+  color: #f2b9ae;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 5px 5px 20px rgba(2, 0, 0, 0.445);
+  transition: all 200ms ease-in-out;
+}
