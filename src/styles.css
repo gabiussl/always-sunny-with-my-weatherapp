@@ -32,7 +32,8 @@ h2 {
   max-width: 600px;
   margin: 20px auto;
   border-radius: 10px;
-  background: linear-gradient(#f2b9ae, #eeb9e8);
+  background: linear-gradient(#f1af88, #e47964);
+  border: none;
 }
 .search-window {
   width: 22%;
@@ -45,7 +46,6 @@ h2 {
   box-shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
   border: none;
 }
-
 body {
   max-width: 600px;
   margin: 0 auto;
@@ -53,19 +53,5 @@ body {
   border-radius: 10px;
   border: none;
   padding: 10px 50px;
-  background: linear-gradient(#f2b9ae, #eeb9e8);
-}
-button {
-  display: block;
-  margin-left: 320px;
-  margin-top: -20px;
-  background-color: #1a253f;
-  color: #f2b9ae;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 5px 5px 20px rgba(2, 0, 0, 0.445);
-  transition: all 200ms ease-in-out;
+  background: linear-gradient(#f2b9ae, #f1af88);
 }
