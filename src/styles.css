@@ -10,32 +10,42 @@ h1 {
 }
 h2 {
   margin: -26px 20px;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: capitalize;
 }
-h3 {
+#temperature {
   margin-top: 60px;
   font-size: 100px;
 }
-small {
+.unit {
   font-size: 20px;
+}
+*,
+::after,
+::before {
+  box-sizing: content-box;
 }
 .icons {
   font-size: 40px;
 }
 .card {
   max-width: 600px;
-  display: block;
   margin: 20px auto;
   border-radius: 10px;
   background: linear-gradient(#f2b9ae, #eeb9e8);
 }
 .search-window {
-  width: 45%;
+  width: 22%;
   position: relative;
-  top: -40px;
-  left: 250px;
+  top: -60px;
+  left: 370px;
+  background: hsla(0, 72%, 117%, 0.2);
+  border-radius: 20px;
+  padding: 9px 25px;
+  box-shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
+  border: none;
 }
+
 body {
   max-width: 600px;
   margin: 0 auto;
