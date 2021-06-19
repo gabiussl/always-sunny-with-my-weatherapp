@@ -5,11 +5,10 @@
   text-align: center;
 }
 h1 {
-  padding: 20px;
+  margin-top: 40px;
   font-size: 15px;
 }
 h2 {
-  margin: -26px 20px;
   font-size: 50px;
   text-transform: capitalize;
 }
@@ -36,15 +35,17 @@ h2 {
   border: none;
 }
 .search-window {
-  width: 22%;
-  position: relative;
-  top: -60px;
-  left: 370px;
+  width: 90%;
+  margin-top: 10px;
   background: hsla(0, 72%, 117%, 0.2);
   border-radius: 20px;
   padding: 9px 25px;
   box-shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
   border: none;
+  text-align: center;
+}
+#conditions {
+  font-style: italic;
 }
 body {
   max-width: 600px;

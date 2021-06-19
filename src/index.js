@@ -37,7 +37,7 @@ function currentTime(Date) {
   let hours = Date.getHours();
   if (hours < 10) hours = `0${hours}`;
   let minutes = Date.getMinutes();
-  if (minutes < 10) minutes = `0+${minutes}`;
+  if (minutes < 10) minutes = `0${minutes}`;
 
   let h1 = document.querySelector("h1");
 
