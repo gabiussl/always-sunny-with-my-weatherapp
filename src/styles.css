@@ -1,8 +1,11 @@
-.temperature {
-  text-align: center;
-}
-.weekday {
-  text-align: center;
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f2b9ae;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 50px;
+  background: linear-gradient(#f2b9ae, #f1af88);
 }
 h1 {
   margin-top: 40px;
@@ -29,7 +32,7 @@ h2 {
 }
 .card {
   max-width: 600px;
-  margin: 20px auto;
+  padding: 20px;
   border-radius: 10px;
   background: linear-gradient(#f1af88, #e47964);
   border: none;
@@ -46,12 +49,9 @@ h2 {
 #conditions {
   font-style: italic;
 }
-body {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #f2b9ae;
-  border-radius: 10px;
-  border: none;
-  padding: 10px 50px;
-  background: linear-gradient(#f2b9ae, #f1af88);
+.temperature {
+  text-align: center;
+}
+.weekday {
+  text-align: center;
 }
