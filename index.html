@@ -19,26 +19,22 @@
     <div class="container">
       <div class="card">
         <div class="card-body">
-          <form id="search-bar">
-            <input
-              class="form-control search-window"
-              type="search"
-              autocomplete="off"
-              autofocus="on"
-              placeholder="🔎 search city"
-              id="look-up-city"
-            />
-          </form>
-          <h1></h1>
-          <h2 id="city"></h2>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <div class="view">
+            <form id="search-bar">
+              <input
+                class="form-control search-window"
+                type="search"
+                autocomplete="off"
+                autofocus="on"
+                placeholder="🔎 search city"
+                id="look-up-city"
+              />
+            </form>
+            <h1></h1>
+            <h2 id="city"></h2>
+          </div>
           <span id="temperature"></span>
-          <span class="unit">°C</span>
+          <span class="unit">°C | <a href="#">°F</a></span>
           <p id="conditions"></p>
           <hr />
           <div class="row">
