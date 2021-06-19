@@ -36,7 +36,7 @@ h2 {
 }
 .search-window {
   width: 90%;
-  margin-top: 10px;
+  margin-block: auto;
   background: hsla(0, 72%, 117%, 0.2);
   border-radius: 20px;
   padding: 9px 25px;
