@@ -19,6 +19,9 @@ h2 {
   margin-top: 60px;
   font-size: 100px;
 }
+#conditions:first-letter {
+  text-transform: capitalize;
+}
 .unit {
   font-size: 16px;
 }
