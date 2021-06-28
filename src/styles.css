@@ -42,7 +42,7 @@ img {
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(#9a83f0, #fac1cf);
+  background: linear-gradient(white, #e68972);
   border: none;
 }
 .search-window {
@@ -65,4 +65,18 @@ img {
 }
 .view {
   margin-bottom: 140px;
+}
+
+.active {
+  cursor: default;
+  color: black;
+  text-decoration: none;
+}
+.active:hover {
+  cursor: default;
+  text-decoration: none;
+}
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
 }

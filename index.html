@@ -33,42 +33,47 @@
             <h1></h1>
             <h2 id="city"></h2>
           </div>
-          <span>
-            <img src="" alt="" id="icon" />
-          </span>
-          <span id="temperature"></span>
-          <span class="unit">°C | <a href="#">°F</a></span>
-          <p id="conditions"></p>
-          <hr />
-          <div class="row">
-            <div class="col weekday">Tue</div>
-            <div class="col weekday">Wed</div>
-            <div class="col weekday">Thu</div>
-            <div class="col weekday">Fri</div>
-            <div class="col weekday">Sat</div>
-          </div>
-          <div class="row">
-            <div class="col temperature"></div>
-            <div class="col temperature"></div>
-            <div class="col temperature"></div>
-            <div class="col temperature"></div>
-            <div class="col temperature"></div>
-          </div>
-          <div class="row icons">
-            <div class="col temperature">🌤</div>
-            <div class="col temperature">☀️</div>
-            <div class="col temperature">🌧</div>
-            <div class="col temperature">🌧</div>
-            <div class="col temperature">🌤</div>
+          <div class="weather-temperature">
+            <span>
+              <img src="" alt="" id="icon" />
+            </span>
+            <span id="temperature"></span>
+            <span class="unit">
+              <a href="#" id="celsius-link" class="active">°C |</a>
+              <a href="#" id="fahrenheit-link" class="active">°F</a>
+            </span>
+            <p id="conditions"></p>
+            <hr />
+            <div class="row">
+              <div class="col weekday">Tue</div>
+              <div class="col weekday">Wed</div>
+              <div class="col weekday">Thu</div>
+              <div class="col weekday">Fri</div>
+              <div class="col weekday">Sat</div>
+            </div>
+            <div class="row">
+              <div class="col temperature"></div>
+              <div class="col temperature"></div>
+              <div class="col temperature"></div>
+              <div class="col temperature"></div>
+              <div class="col temperature"></div>
+            </div>
+            <div class="row icons">
+              <div class="col temperature">🌤</div>
+              <div class="col temperature">☀️</div>
+              <div class="col temperature">🌧</div>
+              <div class="col temperature">🌧</div>
+              <div class="col temperature">🌤</div>
+            </div>
           </div>
         </div>
       </div>
-      <a
-        href="https://github.com/gabiussl/always-sunny-with-my-weatherapp"
-        target="_blank"
-        >Open-source code</a
-      ><span> by Gabriele Slizyte</span>
     </div>
+    <a
+      href="https://github.com/gabiussl/always-sunny-with-my-weatherapp"
+      target="_blank"
+      >Open-source code</a
+    ><span> by Gabriele Slizyte</span>
     <script src="src/index.js"></script>
   </body>
 </html>

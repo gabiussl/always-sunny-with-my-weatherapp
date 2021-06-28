@@ -49,9 +49,9 @@ currentTime(now);
 
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  celsiusTemperature = response.data.main.temp;
+  document.querySelector("#temperature").innerHTML =
+    Math.round(celsiusTemperature);
 
   document.querySelector("#conditions").innerHTML =
     response.data.weather[0].description;
@@ -78,12 +78,32 @@ function handleSubmit(event) {
   let city = document.querySelector("#look-up-city").value;
   search(city);
 }
+
+function convertTempF(event) {
+  event.preventDefault();
+  document.querySelector("#temperature").innerHTML = Math.round(
+    (celsiusTemperature * 9) / 5 + 32
+  );
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+}
+function convertTempC(event) {
+  event.preventDefault();
+  document.querySelector("#temperature").innerHTML =
+    Math.round(celsiusTemperature);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
+
+celsiusTemperature = null;
+
 let form = document.querySelector("#search-bar");
 form.addEventListener("submit", handleSubmit);
 
-function seePosition(position) {
-  let apiKey = "cc417ec5cd357e8e018ba30aead4439a";
-  let positionUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(positionUrl).then(showTemperature);
-}
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertTempF);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertTempC);
+
 search("New York");
