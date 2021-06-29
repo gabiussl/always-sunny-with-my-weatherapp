@@ -17,6 +17,7 @@ h2 {
 }
 img {
   vertical-align: super;
+  margin-left: -20px;
 }
 #temperature {
   margin-top: 60px;
@@ -66,10 +67,6 @@ img {
 .view {
   margin-bottom: 140px;
 }
-.col-6 {
-  width: 55%;
-}
-
 .active {
   cursor: default;
   text-decoration: none;
