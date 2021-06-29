@@ -1,25 +1,3 @@
-let weather = {
-  paris: {
-    temp: 19.7,
-    humidity: 80,
-  },
-  tokyo: {
-    temp: 17.3,
-    humidity: 50,
-  },
-  lisbon: {
-    temp: 30.2,
-    humidity: 20,
-  },
-  "san francisco": {
-    temp: 20.9,
-    humidity: 100,
-  },
-  moscow: {
-    temp: -5,
-    humidity: 20,
-  },
-};
 let now = new Date();
 
 function currentTime(Date) {
@@ -46,6 +24,28 @@ function currentTime(Date) {
   return h1;
 }
 currentTime(now);
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+                <div class="forecast-date">${day}</div>
+                <img
+                  src="http://openweathermap.org/img/wn/01d@2x.png"
+                  alt=""
+                  width="42"
+                />
+                <div class="forecast-temp">18°</div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -107,3 +107,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertTempC);
 
 search("New York");
+displayForecast();
