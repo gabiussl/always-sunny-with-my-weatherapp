@@ -66,17 +66,19 @@ img {
 .view {
   margin-bottom: 140px;
 }
+.col-6 {
+  width: 55%;
+}
 
 .active {
   cursor: default;
+  text-decoration: none;
   color: black;
-  text-decoration: none;
-}
-.active:hover {
-  cursor: default;
-  text-decoration: none;
 }
 #celsius-link,
-#fahrenheit-link {
+#fahrenheit-link,
+#celsius-link,
+#fahrenheit-link:hover {
   text-decoration: none;
+  cursor: default;
 }
