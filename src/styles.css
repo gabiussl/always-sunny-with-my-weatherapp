@@ -5,7 +5,7 @@ body {
   border-radius: 10px;
   border: none;
   padding: 10px 50px;
-  background: linear-gradient(#d0ebf7, #f1af88);
+  background: linear-gradient(#f3dfd2, #f0a072);
 }
 h1 {
   margin-top: 40px;
@@ -43,7 +43,7 @@ img {
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(white, #e68972);
+  background: linear-gradient(#f3bbf1b3, white);
   border: none;
 }
 .search-window {
