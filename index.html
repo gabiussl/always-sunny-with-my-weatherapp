@@ -16,40 +16,41 @@
   </head>
   <body>
     <link rel="stylesheet" href="src/styles.css" />
-    <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <div class="view">
-            <form id="search-bar">
-              <input
-                class="form-control search-window"
-                type="search"
-                autocomplete="off"
-                autofocus="on"
-                placeholder="🔎 search city"
-                id="look-up-city"
-              />
-            </form>
-            <h1></h1>
-            <h2 id="city"></h2>
+    <div class="App">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <div class="view">
+              <form id="search-bar">
+                <input
+                  class="form-control search-window"
+                  type="search"
+                  autocomplete="off"
+                  autofocus="on"
+                  placeholder="🔎 search city"
+                  id="look-up-city"
+                />
+              </form>
+              <h1></h1>
+              <h2 id="city"></h2>
+            </div>
+            <div class="weather-temperature">
+              <span>
+                <img src="" alt="" id="icon" />
+              </span>
+              <span id="temperature"></span>
+              <span class="unit">
+                <a href="#" id="celsius-link" class="active">°C |</a>
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+              <p id="conditions"></p>
+              <hr />
+            </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
-          <div class="weather-temperature">
-            <span>
-              <img src="" alt="" id="icon" />
-            </span>
-            <span id="temperature"></span>
-            <span class="unit">
-              <a href="#" id="celsius-link" class="active">°C |</a>
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
-            <p id="conditions"></p>
-            <hr />
-          </div>
-          <div class="weather-forecast" id="forecast"></div>
         </div>
       </div>
     </div>
-
     <a
       href="https://github.com/gabiussl/always-sunny-with-my-weatherapp"
       target="_blank"

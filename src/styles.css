@@ -5,7 +5,7 @@ body {
   border-radius: 10px;
   border: none;
   padding: 10px 50px;
-  background: linear-gradient(#f3dfd2, #f0a072);
+  background: linear-gradient(#7c9ff1, #c7d3f0);
 }
 h1 {
   margin-top: 40px;
@@ -40,7 +40,7 @@ h2 {
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(rgb(202, 102, 202), white);
+  background: linear-gradient(#ff969c, rgb(110, 110, 245));
   border: none;
 }
 .search-window {
@@ -71,15 +71,13 @@ h2 {
   cursor: default;
 }
 .weather-forecast {
-  margin-top: 20px;
+  margin: 40px 0;
   text-align: center;
 }
 .forecast-date {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .forecast-temp {
   font-size: 15px;
-}
-.top-buffer {
-  margin-top: 20px;
 }
